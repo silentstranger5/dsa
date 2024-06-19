@@ -44,3 +44,11 @@ Below is a list of folders of this repository with a brief description:
 | tree_concat   | Tree concatenation algorithm              |
 | uniq          | Implementation of UNIX `uniq` uitl        |
 
+# How to build
+
+I cannot provide specific instructions, since they are compiler dependent. Building process should be fairly straightforward. On Linux, it probably goes like this:
+```
+git clone https://github.com/silentstranger5/dsa.git
+cd dsa/array
+cc array.c main.c
+```
