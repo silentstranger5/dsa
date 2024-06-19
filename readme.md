@@ -18,26 +18,28 @@ On average, each folder contains three files:
 
 Below is a list of folders of this repository with a brief description:
 
-| Folder Name | Folder Description |
-|-------------|--------------------|
-| array | Dynamic array with memory reallocation |
-| btree | B-Tree data structure |
-| caesar | Caesar cypher encryption |
-| graph  | Graph data structure with search algorithms |
-| hash | Hash table |
-| heap | Heap data structure |
-| list | Singly linked list |
-| matrix | Matrix multiplication |
-| parenthesis | Balanced parenthesis detection |
-| phi | Phi number computation using recurrent chain fraction and numerical approximation |
-| pi | Pi number computation using recurrent chain fraction |
-| python | primitive algorithms implementation in python |
-| queue | Qeueue data structure |
-| reverse | Reverse words order in a given string |
-| reverse_list | Reverse singly linked list |
-| sort | Basic sorting algorithms |
-| stack | Stack data structure |
-| strindex | Look for a character in a given string |
-| tree | Tree data structure |
-| tree_concat | Tree concatenation algorithm |
-| uniq | Implementation of UNIX `uniq` uitl |
+| Folder Name   | Folder Description |
+|---------------|--------------------|
+| array         | Dynamic array with memory reallocation    |
+| btree         | B-Tree data structure                     |
+| caesar        | Caesar cypher encryption                  |
+| dynamic       | Array with dynamic type system            |
+| graph         | Graph data structure with search algorithms           |
+| hash          | Hash table                                |
+| heap          | Heap data structure                       |
+| list          | Singly linked list                        |
+| matrix        | Matrix multiplication                     |
+| parenthesis   | Balanced parenthesis detection            |
+| phi           | Phi number computation using recurrent chain fraction |
+| pi            | Pi  number computation using recurrent chain fraction |
+| python        | primitive algorithms implementated in python          |
+| queue         | Qeueue data structure                     |
+| reverse       | Reverse words order in a given string     |
+| reverse_list  | Reverse singly linked list                |
+| sort          | Basic sorting algorithms                  |
+| stack         | Stack data structure                      |
+| strindex      | Look for a character in a given string    |
+| tree          | Tree data structure                       |
+| tree_concat   | Tree concatenation algorithm              |
+| uniq          | Implementation of UNIX `uniq` uitl        |
+
