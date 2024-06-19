@@ -4,9 +4,10 @@ This repository contains implementation of the basic data structures and algorit
 
 References:
 
-- Introduction to Algorithms, fourth edition ([MIT Press](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/))
-- Algorithm Design Manual, Skienna S., third edition ([Amazon](https://www.amazon.com/Algorithm-Design-Manual-Computer-Science/dp/3030542556))
-- Programiz tutorials ([Programiz](https://www.programiz.com/dsa))
+| Book Name         | Book Link |
+|-------------------|-----------|
+| Introduction to Algorithms, Fourth edition | ([MIT Press](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)) |
+| Algorithm Design Manual, Skienna S., Third edition | ([Amazon](https://www.amazon.com/Algorithm-Design-Manual-Computer-Science/dp/3030542556)) |
 
 On average, each folder contains three files:
 
