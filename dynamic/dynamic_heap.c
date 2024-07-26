@@ -34,11 +34,11 @@ void get_data(void **data, int *type) {
 	
 	t = malloc(STRL);
 	printf("Type data type (int, float, char, string): ");
-	scanf(" %s", t);
+	scanf_s(" %s", t);
 	if (!strcmp(t, "int")) {
 		*data = malloc(sizeof(int));
 		printf("Type an integer: ");
-		if (!scanf(" %d", (int *) *data)) {
+		if (!scanf_s(" %d", (int *) *data)) {
 			printf("failed to obtain data\n");
 			exit(1);
 		}
@@ -46,7 +46,7 @@ void get_data(void **data, int *type) {
 	} else if (!strcmp(t, "float")) {
 		*data = malloc(sizeof(float));
 		printf("Type a floating-point number: ");
-		if (!scanf(" %f", (float *) *data)) {
+		if (!scanf_s(" %f", (float *) *data)) {
 			printf("failed to obtain data\n");
 			exit(1);
 		}
@@ -214,7 +214,7 @@ int main(void) {
 	char input[10];
 	
 	a = init_array();
-	while (scanf("%s", input)) {
+	while (scanf_s("%s", input)) {
 		if (!strcmp(input, "push")) {
 			c = init_cell();
 			push_cell(a, c);
@@ -222,21 +222,21 @@ int main(void) {
 			c = pop_cell(a);
 			print_cell(c);
 		} else if (!strcmp(input, "insert")) {
-			if (!scanf(" %d", &i)) {
+			if (!scanf_s(" %d", &i)) {
 				printf("failed to obtain index\n");
 				exit(1);
 			}
 			c = init_cell();
 			insert_cell(a, c, i);
 		} else if (!strcmp(input, "delete")) {
-			if (!scanf(" %d", &i)) {
+			if (!scanf_s(" %d", &i)) {
 				printf("failed to obtain index\n");
 				exit(1);
 			}
 			c = delete_cell(a, i);
 			print_cell(c);
 		} else if (!strcmp(input, "get")) {
-			if (!scanf(" %d", &i)) {
+			if (!scanf_s(" %d", &i)) {
 				printf("failed to obtain index\n");
 				exit(1);
 			}
@@ -248,17 +248,17 @@ int main(void) {
 			print_array(a);
 		} else if (!strcmp(input, "help")) {
 			printf(
-				"array - generic geterogenous array of data\n"
-				"usage: command [args]\n"
-				"\tpush\t- push to   array\n"
-				"\tpop\t- pop  from array\n"
-				"\tinsert i\t- insert to   array\n"
-				"\tdelete i\t- delete from array\n"
-				"\tget i\t- get from array\n"
-				"\tsize\t - print array size\n"
-				"\tprint\t- print array\n"
-				"\thelp\t- display this message\n"
-				"\texit\t- exit from program\n"
+				"array - dynamic array with heap allocation\n"
+				"usage: command [args]\n\t"
+				"push\t- push to array\n\t"
+				"pop\t- pop  from array\n\t"
+				"insert i\t- insert to array\n\t"
+				"delete i\t- delete from array\n\t"
+				"get i\t- get from array\n\t"
+				"size\t - print array size\n\t"
+				"print\t- print array\n\t"
+				"help\t- display this message\n\t"
+				"exit\t- exit from program\n"
 			);
 		} else if (!strcmp(input, "exit")) {
 			break;
